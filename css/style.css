@@ -802,12 +802,16 @@ footer {
 
     .content {
         height: auto;
+        margin: auto;
+        width: auto;
         display: block;
         padding: 3rem 0 5rem;
     }
 
         .content .content-box {
             padding: 0 1rem;
+            margin: auto;
+            width: auto;
         }
 
             .content .content-box .big-content {
