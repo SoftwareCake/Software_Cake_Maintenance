@@ -65,7 +65,8 @@ function ProcessMessage(message) {
 function MessageExtraction(userResponse) {
     if (userResponse.length > 0) {
         var response = [];
-        if (listOfKeyPhrases.includes(userResponse.toLowerCase())) {
+        userResponse = userResponse.toLowerCase();
+        if (listOfKeyPhrases.includes(userResponse)) {
             response.push(listOfKeyResponses[listOfKeyPhrases.findIndex(x => x === userResponse)]);
         } else {
             var sParts = SeperateResponseSentence(userResponse);
