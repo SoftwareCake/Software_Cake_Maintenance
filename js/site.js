@@ -48,13 +48,15 @@ function ProcessMessage(message) {
                 waitingOnResponse = true;
                 chatMessage = 'The key is "' + message + '". Understood what would you like for me to say in response to that?';
             }
-        } else {
+        }
+        else {
             listOfKeyResponses.push(message);
             waitingOnResponse = false;
             learning = false;
             chatMessage = 'The response is "' + message + '". Understood. I will remember this from now on.';
         }
-    } else {
+    }
+    else {
         chatMessage = "Please enter a message.";
     }
     chatBox.innerHTML += chatOpener + chatMessage + chatCloser;
@@ -84,9 +86,11 @@ function MessageExtraction(userResponse) {
                                     if (wordGroup[w + 1] == "word" || wordGroup[w + 1] == "phrase") {
                                         if (wordGroup[w + 1] == "word") {
                                             response.push("What key word would you like me to remember?");
+                                            learning = true;
                                         }
                                         if (wordGroup[w + 1] == "phrase") {
                                             response.push("What key phrase would you like me to remember?");
+                                            learning = true;
                                         }
                                     }
                                     break;
@@ -118,9 +122,11 @@ function MessageExtraction(userResponse) {
                                     if (sParts[0][sp + 1] == "word" || sParts[0][sp + 1] == "phrase") {
                                         if (sParts[0][sp + 1] == "word") {
                                             response.push("What key word would you like me to remember?");
+                                            learning = true;
                                         }
                                         if (sParts[0][sp + 1] == "phrase") {
                                             response.push("What key phrase would you like me to remember?");
+                                            learning = true;
                                         }
                                     }
                                     break;
