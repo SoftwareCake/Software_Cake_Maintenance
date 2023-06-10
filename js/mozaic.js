@@ -7,16 +7,16 @@ var w = dotty.width = window.innerWidth,
       
       side: 15,
       picksParTick: 2,
-      baseTime: 40,
-      addedTime: 10,
+      baseTime: 0,
+      addedTime: 0,
       
-        colors: ['rgba(36,199,207,alp)','rgba(141,228,225,alp)', 'rgba(249,251,255,alp)', 'rgba(249,166,32,alp)' ],
+        colors: ['rgba(36,199,207,alp)','rgba(249,251,255,alp)' ],
       
-      addedAlpha: 20,
+      addedAlpha: 0,
       strokeColor: 'rgb(51,51,51)',
       
-      hueSpeed: .2,
-      repaintAlpha: 1
+      hueSpeed: .0,
+      repaintAlpha: 0
     },
     
     difX = Math.sqrt( 3 ) * opts.side / 2, // height of a equilateral triangle 

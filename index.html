@@ -9,84 +9,127 @@
 * This is a premium product available exclusively here : http://themeforest.net/user/Madeon08/portfolio
 * -->
 <html lang="en-us" class="no-js">
-	<head>
-	    <meta charset="utf-8">
-	    <title>Software Cake :: Maintenance</title>
-	    <meta name="description" content="The description should optimally be between 150-160 characters.">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <meta name="author" content="ThemeHelite">
+<head>
+    <meta charset="utf-8">
+    <title>Software Cake :: Maintenance</title>
+    <meta name="description" content="The description should optimally be between 150-160 characters.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="ThemeHelite">
 
-        <!-- ================= Favicons ================== -->
-        <!-- Standard -->
-        <link rel="shortcut icon" href="img/favicon.png">
-        <!-- Retina iPad Touch Icon-->
-        <link rel="apple-touch-icon" sizes="144x144" href="img/favicon-retina-ipad.png">
-        <!-- Retina iPhone Touch Icon-->
-        <link rel="apple-touch-icon" sizes="114x114" href="img/favicon-retina-iphone.png">
-        <!-- Standard iPad Touch Icon--> 
-        <link rel="apple-touch-icon" sizes="72x72" href="img/favicon-standard-ipad.png">
-        <!-- Standard iPhone Touch Icon--> 
-        <link rel="apple-touch-icon" sizes="57x57" href="img/favicon-standard-iphone.png">
+    <!-- ================= Favicons ================== -->
+    <!-- Standard -->
+    <link rel="shortcut icon" href="img/logo.png">
+    <!-- Retina iPad Touch Icon-->
+    <link rel="apple-touch-icon" sizes="144x144" href="img/logo.png">
+    <!-- Retina iPhone Touch Icon-->
+    <link rel="apple-touch-icon" sizes="114x114" href="img/logo.png">
+    <!-- Standard iPad Touch Icon-->
+    <link rel="apple-touch-icon" sizes="72x72" href="img/logo.png">
+    <!-- Standard iPhone Touch Icon-->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/logo.png">
 
-		<!-- ============== Resources style ============== -->
-		<link rel="stylesheet" type="text/css" href="css/style.css" />
-	</head>
-	<body>
-        <!-- Your logo on the top left -->
-        <a href="#" class="logo-link" title="back home">
-            <img src="img/logo.png" class="logo" alt="Company's logo" />
-        </a>
+    <!-- ============== Resources style ============== -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/site.css" />
+    <link rel="stylesheet" type="text/css" href="css/neumorphism.css" />
+</head>
+<body>
+    <canvas id="dotty"></canvas>
 
-        <div class="content">
-            <div class="content-box">
-                <div class="big-content">
-                    <!-- Main squares for the content logo in the background -->
-                    <div class="list-square">
-                        <span class="square"></span>
-                        <span class="square"></span>
-                        <span class="square"></span>
+    <!-- Your logo on the top left -->
+    <a href="#" class="logo-link" title="back home">
+        <img src="img/logo.png" class="logo" alt="Company's logo" />
+    </a>
+
+    <div class="content">
+        <div class="content-box content-visability">
+            <h1>
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-hexagon font-bold" viewBox="0 0 16 16">
+                    <path d="M14 4.577v6.846L8 15l-6-3.577V4.577L8 1l6 3.577zM8.5.134a1 1 0 0 0-1 0l-6 3.577a1 1 0 0 0-.5.866v6.846a1 1 0 0 0 .5.866l6 3.577a1 1 0 0 0 1 0l6-3.577a1 1 0 0 0 .5-.866V4.577a1 1 0 0 0-.5-.866L8.5.134z" />
+                </svg>
+                <span class="color-prime">S</span>oftware
+                <span class="color-prime">C</span>ake
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-hexagon font-bold" viewBox="0 0 16 16">
+                    <path d="M14 4.577v6.846L8 15l-6-3.577V4.577L8 1l6 3.577zM8.5.134a1 1 0 0 0-1 0l-6 3.577a1 1 0 0 0-.5.866v6.846a1 1 0 0 0 .5.866l6 3.577a1 1 0 0 0 1 0l6-3.577a1 1 0 0 0 .5-.866V4.577a1 1 0 0 0-.5-.866L8.5.134z" />
+                </svg>
+            </h1>
+            <div>
+                <div class="clock-container">
+                    <hr />
+                    <h2 id="headline">Countdown to <span>🤔</span></h2>
+                    <div id="countdown">
+                        <ul>
+                            <li><span id="days"></span>Days⁝</li>
+                            <li><span id="hours"></span>⁝Hours⁝</li>
+                            <li><span id="minutes"></span>⁝Minutes⁝</li>
+                            <li><span id="seconds"></span>⁝Seconds</li>
+                        </ul>
                     </div>
-
-                    <!-- Main lines for the content logo in the background -->
-                    <div class="list-line">
-                        <span class="line"></span>
-                        <span class="line"></span>
-                        <span class="line"></span>
-                        <span class="line"></span>
-                        <span class="line"></span>
-                        <span class="line"></span>
+                    <div id="content" class="emoji">
+                        <span>💖</span>
+                        <span>🥳</span>
+                        <span>✨</span>
                     </div>
-
-                    <!-- The animated searching tool -->
-                    <i class="fa fa-search" aria-hidden="true"></i>
-			
-                    <!-- div clearing the float -->
-                    <div class="clear"></div>
                 </div>
-                <h1>Welcome to Software Cake</h1>
-                <p>
-		    This site is currently under maintenance for our upcoming launch.<br>
-                    Please hold tight while we ensure that our products are of the utmost quality for you all.			
-		</p>
+            </div>
+            <hr />
+            <div>
+                <!-- Main squares for the content logo in the background -->
+                <!--<div class="list-square">
+                    <span class="square"></span>
+                    <span class="square"></span>
+                    <span class="square"></span>
+                </div>-->
+                <!-- Main lines for the content logo in the background -->
+                <!--<div class="list-line">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>-->
+                <!-- The animated searching tool -->
+                <!--<i class="fa fa-search" aria-hidden="true"></i>-->
+                <!-- div clearing the float -->
+                <div class="clear"></div>
+            </div>
+            <p>
+                Welcome to Software Cake! We are currently working on our official task management platform.
+                For the time being please enjoy our sampler chat with Elias. This is an older version of his
+                chat system and can only learn keywords from you.
+            </p>
+        </div>
+        <div class="content-box content-visability margin-left-20">
+            <h1><span class="color-prime">C</span>hat <span class="color-prime">S</span>ampler</h1>
+            <div id="chatBox" class="display-grid width-100-p chat-box-scroll"></div>
+            <hr />
+            <div class="display-flex">
+                <input type="text" id="userInput" class="oval-xlg" alt="User text input for comunicating with A.I. demo" placeholder="" />
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" id="sendMessage" class="bi bi-send margin-auto margin-left-20 cursor-pointer hover-color-primary transition-all" viewBox="0 0 16 16">
+                    <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"></path>
+                </svg>
             </div>
         </div>
+    </div>
 
-        <footer class="light">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="https://www.facebook.com/SoftwareCake/"><i class="fa fa-facebook"></i></a></li>
-            </ul>
-        </footer>
+    <footer class="light back-dark">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="https://www.facebook.com/SoftwareCake/"><i class="fa fa-facebook"></i></a></li>
+        </ul>
+    </footer>
 
-        <!-- ///////////////////\\\\\\\\\\\\\\\\\\\ -->
-        <!-- ********** jQuery Resources ********** -->
-        <!-- \\\\\\\\\\\\\\\\\\\/////////////////// -->
+    <!-- ///////////////////\\\\\\\\\\\\\\\\\\\ -->
+    <!-- ********** jQuery Resources ********** -->
+    <!-- \\\\\\\\\\\\\\\\\\\/////////////////// -->
+    <!-- * Libraries jQuery and Bootstrap - Be careful to not remove them * -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/site.js"></script>
+    <script src="js/countdown.js"></script>
 
-        <!-- * Libraries jQuery and Bootstrap - Be careful to not remove them * -->
-        <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-
-        <!-- Mozaic plugin -->
-        <script src="js/mozaic.js"></script>
-    </body>
+    <!-- Mozaic plugin -->
+    <script src="js/mozaic.js"></script>
+</body>
 </html>
