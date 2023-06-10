@@ -1,0 +1,7 @@
+
+*.json
+*.sqlite
+*.config
+*.vsidx
+*.lock
+.vs/Software_Cake_Maintenance/v17/.wsuo
