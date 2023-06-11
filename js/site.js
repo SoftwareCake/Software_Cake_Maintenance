@@ -25,6 +25,15 @@ function Opener() {
     chatBox.innerHTML = chatOpener + chatMessage + chatCloser;
 }
 
+function Tutorial() {
+    var chatBox = $("#chatBox")[0];
+    var chatOpener = `<div class="display-inline-flex "><img src="img/Elias.jpg" class="elias-profile-picture" alt="elias profile picture" /><p class="margin-auto margin-left-20 bold e-chatbox">`;
+    var chatMessage = "";
+    var chatCloser = `</p></div>`;
+    chatMessage = `If you need assistance here is the <a href="https://youtu.be/NE7l4FB5BpI" target="_blank" style="color:red; text-decoration:underline">tutorial video.</a>`;
+    chatBox.innerHTML += chatOpener + chatMessage + chatCloser;
+}
+
 function GetRandomInt(max) {
     return Math.floor(Math.random() * max);
 }
@@ -223,6 +232,7 @@ function SeperateResponseSentence(userResponse) {
 
 $(function () {
     Opener();
+    Tutorial();
     $("#userInput")[0].placeholder = "Keyphrase";
 });
 
