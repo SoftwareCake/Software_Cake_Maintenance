@@ -7,15 +7,11 @@
     let today = new Date(),
         dd = String(today.getDate()).padStart(2, "0"),
         mm = String(today.getMonth() + 1).padStart(2, "0"),
-        yyyy = today.getFullYear(),
-        nextYear = yyyy + 1,
+        yyyy = 2023,
         dayMonth = "06/30/",
         expectedDate = dayMonth + yyyy;
 
     today = mm + "/" + dd + "/" + yyyy;
-    if (today > expectedDate) {
-        expectedDate = dayMonth + nextYear;
-    }
 
     const countDown = new Date(expectedDate).getTime(),
         x = setInterval(function () {
