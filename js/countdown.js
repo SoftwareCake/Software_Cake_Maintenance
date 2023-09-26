@@ -34,7 +34,7 @@
                     "If you are interested in being a Beta Tester, please fill out the form below. \n" + 
                     `
                     Thank you,
-                    Thyraellis Howard
+                    Ms. Howard
                     Founder / CEO \n`;
                 document.getElementById("betaForm").innerHTML += `<a href="https://forms.gle/Kj2NfzQDazX4gD5y8">
                 <button class="oval-lg schedule-link n-inputs" style="box-shadow: none; width:auto">
